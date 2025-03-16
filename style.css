@@ -1,0 +1,491 @@
+/* 
+
+- Soft red: hsl(7, 99%, 70%)
+- Yellow: hsl(51, 100%, 49%)
+- Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
+- Dark blue (photography text): hsl(198, 62%, 26%)
+- Dark moderate cyan (footer): hsl(168, 34%, 41%)
+
+### Neutral
+
+- Very dark desaturated blue: hsl(212, 27%, 19%)
+- Very dark grayish blue: hsl(213, 9%, 39%)
+- Dark grayish blue: hsl(232, 10%, 55%)
+- Grayish blue: hsl(210, 4%, 67%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Font
+
+- Family: [Barlow](https://fonts.google.com/specimen/Barlow)
+- Weights: 600
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700, 900
+
+*/
+
+/* GENERAL STYLING  */
+
+/* *{
+    border: red 2px solid;
+} */
+
+:root{
+    --Soft-red:hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --Dark-blue: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+}
+
+h1, h2, h3, h4{
+    font-family: sans-serif, "Barlow";
+    font-weight: 900;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, "Fraunces";
+    font-size: 18px;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+header, .graphic, .photo{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.desktop{
+    display: unset;
+}
+
+.mobile{
+    display: none;
+}
+
+img{
+    width: 100%;
+}
+
+.row{
+    gap: 0;
+    padding: 0;
+}
+
+/* HEADER & NAVIGATION */
+
+header{
+    outline: none;
+    border: none;
+    background-image: url(./images/desktop/image-header.jpg);
+}
+
+nav{
+    width: auto;
+    background-color: transparent;
+}
+
+.navbar-nav{
+    gap: 1.5rem;
+}
+
+.container{
+    padding: 0 !important;
+}
+
+h1{
+    color: #fff !important;
+    font-weight: 700 !important;
+    font-size: 3rem !important;
+    word-spacing: .5rem !important;
+    letter-spacing: .5rem !important;
+    text-transform: uppercase !important;
+}
+
+.logo-img{
+    width: auto;
+    margin-right: auto;
+}
+
+ul{
+    margin-left: auto;
+}
+
+a{
+    color: #fff !important;
+}
+
+.nav-btn{
+    border: none;
+    box-sizing: border-box;
+    padding: .75rem  2.25rem ;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background-color: rgb(108, 200, 236);
+    color: #fff;
+}
+
+
+
+/* MAIN BODY */
+
+.div-1, .div-2{
+    box-sizing: border-box;
+}
+
+.col-lg-6{
+    height: auto !important;
+}
+
+.write-up{
+    height: auto;
+}
+
+.write-up>div{
+    box-sizing: border-box;
+    padding: 0 6.5rem 0 4rem !important;
+    padding-top: 10% !important;
+    border: none;
+}
+
+.out h2{
+    padding-right: 0 !important;
+    padding-left: 0;
+}
+
+.out hr{
+    border-color: var(--Soft-red) !important;
+    width: 75% !important;
+}
+
+.intro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+}
+
+.intro>img{
+    height: 20%;
+    width: 3.5%;
+    margin-bottom: 15rem !important;
+}
+
+h2{
+    padding-right: 40% !important;
+    line-height: 1.25;
+}
+
+.click{
+    width: 32.5%;
+    line-height: .1;
+}
+
+.click>a, .out>a{
+    position: relative !important;
+    left: 7.5% !important;
+    color: #000 !important;
+    text-decoration: none;
+    transition: .3s ease;
+    z-index: 1;
+}
+
+.click hr{
+    width: 75%;
+    border-style: solid;
+    border-width: .5rem;
+    border-radius: 2rem;
+    transform: translateY(-100%);
+    border-color: var(--Yellow);
+}
+
+.click:hover{
+    cursor: pointer;
+}
+
+.graphic{
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+}
+
+.photo{
+    background-image: url(./images/desktop/image-photography.jpg);
+}
+
+.graphic, .photo{
+    text-align: center;
+    margin-bottom: 10rem;
+    box-sizing: border-box;
+    height: 35rem !important;
+}
+
+.graphic>.card, .photo>.card{
+    background-color: transparent !important;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 3rem 7rem;
+    box-sizing: border-box;
+}
+
+.graphic>.card>h3, .photo>.card>h3{
+    margin-bottom: 2rem;
+}
+
+
+/* SECTION-BODY */
+
+
+section{
+    text-align: center;
+}
+
+section>h3{
+    margin-bottom: 10%;
+}
+
+.test>div{
+    margin-bottom: 20%;
+}
+
+.test>div{
+    box-sizing: border-box;
+    padding: 0 2rem;
+}
+
+.test>div>img{
+    border-radius: 50% !important;
+    width: 20% !important;
+}
+
+.test>div>p{
+    margin-bottom: 15%;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--Dark-moderate-cyan) !important;
+    /* color: var(--Very-dark-grayish-blue); */
+}
+
+footer>div>img{
+    width: 15%;
+    text-align: center;
+}
+
+.img{
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.footlinks, .socials{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.socials{
+    gap: 2rem;
+}
+
+.footlinks>a{
+    visibility: visible !important;
+    text-decoration: none;
+    color: var(--Dark-desaturated-cyan) !important;
+}
+
+.footlinks>a:hover, .attribution>a:hover{
+    color: #fff !important;
+    transition: .3s ease !important;
+}
+
+.socials>a>img:hover{
+    filter: brightness(250%) !important;
+    transition: .3s ease;
+}
+
+.attribution { font-size: 18px; text-align: center; margin-bottom: 2rem; color: var(--Dark-desaturated-cyan);}
+.attribution a { color: var(--Dark-desaturated-cyan) !important; text-decoration: none; }
+
+
+
+@media(max-width:768px){
+    .navbar-nav{
+        gap: .5rem !important;
+    }
+
+    .nav-btn{
+        border: none;
+        box-sizing: border-box;
+        padding: .5rem 1rem !important ;
+        border-radius: 2rem;
+        text-transform: uppercase;
+        margin: 0 !important;
+        background-color: rgb(108, 200, 236);
+        color: #fff;
+    }
+
+    .div-1{
+        flex-direction: column-reverse !important;
+    }
+
+    .write-up{
+        text-align: center;
+    }
+
+    .write-up>.card{
+        align-items: center;
+    }
+
+    .write-up>.card>h2{
+        padding-right: 0 !important;
+    }
+
+    .click{
+        width: 20%;
+        line-height: .1;
+    }
+
+    .click>a, .out>a{
+        left: 0 !important;
+    }
+
+    .click>hr{
+        width: 100% !important;
+    }
+
+    .write-up>div{
+        padding: 2rem !important;
+    }
+
+    .graphic{
+        margin-bottom: 0;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: unset;
+    }
+}
+
+@media(max-width:425px){
+
+    .navbar{
+        width: 100%;
+        position: absolute;
+        top: 0;
+    
+    }
+
+    .container{
+        padding: 0 1.5rem !important;
+    }
+
+    .navbar-nav{
+        background-color: #fff;
+        margin-top: 3rem;
+        height: 16.5rem;
+        z-index: 1;
+        position: relative;
+    }
+
+    .navbar-nav::before{
+        content: " ";
+        position: relative;
+        border-left: 1.25rem solid transparent;
+        border-bottom: 1.25rem solid #fff;
+        margin-left: auto;
+        top: -1.7rem;
+    }
+
+    .nav-link{
+        color: var(--Dark-grayish-blue) !important;
+    }
+
+    .nav-btn{
+        background-color: var(--Yellow);
+        padding: .75rem 2rem !important;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+        text-transform: uppercase !important;
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    .intro{
+        padding-top: 5rem;
+    }
+
+    .intro>img{
+        height: 20%;
+        width: 10%;
+        margin-bottom: 10rem !important;
+        position: relative;
+        top: -1.5rem
+    }
+    .click{
+        width: 30%;
+    }
+    
+    .graphic{
+        background-image: url(./images/mobile/image-graphic-design.jpg);
+    }
+    
+    .photo{
+        background-image: url(./images/mobile/image-photography.jpg);
+        margin-bottom: 5rem;
+    }
+
+    .graphic>.card, .photo>.card{
+        padding: 2rem 1rem;
+    }
+
+    section>h3{
+        margin-bottom: 20%;
+    }
+
+    .test>div>img{
+        margin-bottom: 2rem !important;
+    }
+
+    .test>div>p {
+        margin-bottom: 10%;
+    }
+
+    .gr{
+        display: grid;
+        grid-template-columns: 2;
+    }
+
+    footer>div>img {
+        width: 50%;
+    }
+
+    .footlinks{
+        gap: 2rem;
+    }
+
+}
