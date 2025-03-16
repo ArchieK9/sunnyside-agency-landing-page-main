@@ -14,7 +14,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 ### Links
 
 - Solution URL: [Sunnyside-agency-landing-page-main](https://github.com/ArchieK9/sunnyside-agency-landing-page-main)
-- Live Site URL: [Sunnyside-agency-landing-page-mainhttps://archiek9.github.io/sunnyside-agency-landing-page-main/)
+- Live Site URL: [Sunnyside-agency-landing-page-main](https://archiek9.github.io/sunnyside-agency-landing-page-main/)
 
 ## My process
 
